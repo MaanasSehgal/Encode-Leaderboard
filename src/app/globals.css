@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.leaderboard-bg-gradient-1 {
+    background: linear-gradient(111.03deg, rgba(239, 238, 238, 0.32) 2.82%, rgba(239, 238, 238, 0.06) 90.94%);
+    backdrop-filter: blur(11px);
+}
+
+.leaderboard-bg-gradient-2 {
+    background: linear-gradient(111.03deg, rgba(239, 238, 238, 0.32) 2.82%, rgba(239, 238, 238, 0.06) 90.94%);
+    backdrop-filter: blur(0.5px);
+}
