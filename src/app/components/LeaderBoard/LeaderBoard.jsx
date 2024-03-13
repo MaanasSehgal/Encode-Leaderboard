@@ -5,7 +5,7 @@ import RankingGrid from "./RankingGrid";
 const LeaderBoard = () => {
     return (
         <>
-            <div className="fixed top-0 w-screen h-screen bg-black text-white md:p-16">
+            <div className="fixed top-0 w-screen h-screen bg-black text-white md:p-12">
                 <div className="flex flex-col items-center w-full h-full md:rounded-3xl leaderboard-bg-gradient-1">
                     <LeaderBoardHeading />
                     <RankingGrid />

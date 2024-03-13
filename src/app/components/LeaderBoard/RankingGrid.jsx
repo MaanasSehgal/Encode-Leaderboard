@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const RankingGrid = () => {
     const leaderboardData = [
         {rank: 1, username: "Alice", round1Points: 100, round2Points: 150, totalPoints: 250},
@@ -30,14 +32,29 @@ const RankingGrid = () => {
         {rank: 20, username: "Tom", round1Points: 0, round2Points: 30, totalPoints: 30},
     ];
 
+    const diamImage = (rank) => {
+        switch (rank) {
+            case 1:
+                return "diamond1.svg";
+            case 2:
+                return "diamond2.svg";
+            case 3:
+                return "diamond3.svg";
+            default:
+                return "diamond4.svg";
+        }
+    };
+
     return (
         <div className="w-full overflow-y-auto scrollbar-hide my-6">
             {leaderboardData.map((contestant) => (
-                <div key={contestant.rank} className="grid grid-rows-1 grid-cols-5 gap-5 py-6 text-3xl text-center">
-                    <div>{contestant.rank}</div>
+                <div key={contestant.rank} className="grid grid-rows-1 grid-cols-5 gap-5 py-6 text-center md:text-xl sm:text-lg text-md">
+                    <div className="flex justify-center">
+                        <Image className="w-6 h-6 sm:w-10 sm:h-10" src={diamImage(contestant.rank)} width={50} height={50} alt="diamond" />
+                    </div>
                     <div>{contestant.username}</div>
-                    <div>{contestant.round1Points}</div>
-                    <div>{contestant.round2Points}</div>
+                    <div>{contestant.round1Points == 0 ? "--" : contestant.round1Points}</div>
+                    <div>{contestant.round2Points == 0 ? "--" : contestant.round2Points}</div>
                     <div>{contestant.totalPoints}</div>
                 </div>
             ))}
