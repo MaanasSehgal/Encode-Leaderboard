@@ -1,9 +1,9 @@
 const fileNames = ["res1.json", "res2.json"];
 
-const fetchContestData = async (contestId) => {
-    const response = await fetch(`http://127.0.0.1:5500/${contestId}`);
+const fetchContestData = async (fileName) => {
+    const response = await fetch(`http://127.0.0.1:5500/${fileName}`);
     if (!response.ok) {
-        throw new Error(`Failed to fetch data for contest ID ${contestId}`);
+        throw new Error(`Failed to fetch data for file ${fileName}`);
     }
     return response.json();
 };
@@ -22,41 +22,53 @@ Promise.all(fileNames.map(fetchContestData))
             contestNames.push(contestName);
 
             data.result.rows.forEach((row) => {
-                const username = row.party.members[0].handle;
-                if (!(username in combinedUserMap)) {
-                    combinedUserMap[username] = {
-                        username,
+                const userId = row.party.members[0].handle; // Use a unique identifier if available
+                if (!(userId in combinedUserMap)) {
+                    combinedUserMap[userId] = {
+                        username: row.party.members[0].handle, // Include username for reference
                         points1: 0,
                         points2: 0,
                         questionCount1: 0,
                         questionCount2: 0,
                         solvedCount: 0,
                         totalPoints: 0,
+                        penalty1: 0,
+                        penalty2: 0,
+                        finalPenalty: 0,
                     };
                 }
-                combinedUserMap[username][`points${index + 1}`] += row.points;
-                combinedUserMap[username][`questionCount${index + 1}`] += row.problemResults.filter((problem) => problem.points > 0).length;
-                combinedUserMap[username].solvedCount += row.problemResults.filter((problem) => problem.points > 0).length;
-                combinedUserMap[username].totalPoints += row.points;
+                combinedUserMap[userId][`points${index + 1}`] += row.points;
+                combinedUserMap[userId][`questionCount${index + 1}`] += row.problemResults.filter((problem) => problem.points > 0).length;
+                combinedUserMap[userId].solvedCount += row.problemResults.filter((problem) => problem.points > 0).length;
+                combinedUserMap[userId].totalPoints += row.points;
+                combinedUserMap[userId][`penalty${index + 1}`] = row.penalty;
+                combinedUserMap[userId].finalPenalty += row.penalty;
             });
         });
 
         const combinedResults = Object.values(combinedUserMap);
         combinedResults.sort((a, b) => {
-            if (b.totalPoints !== a.totalPoints) {
-                return b.totalPoints - a.totalPoints;
+            if (a.finalPenalty !== b.finalPenalty) {
+                return a.finalPenalty - b.finalPenalty;
             } else {
-                return a.username.localeCompare(b.username);
+                if (a.solvedCount !== b.solvedCount) {
+                    return b.solvedCount - a.solvedCount; // Sort by solved count if penalties are the same
+                } else {
+                    return a.username.localeCompare(b.username); // If both are still tied, sort by username
+                }
             }
         });
 
-        let prevPoints = -1;
-        combinedResults.forEach((participant, index) => {
-            if (participant.totalPoints !== prevPoints) {
-                rank = index + 1;
+        let rank = 0;
+        let prevPenalty = -1;
+        let prevSolvedCount = -1;
+        combinedResults.forEach((participant) => {
+            if (participant.finalPenalty !== prevPenalty || participant.solvedCount !== prevSolvedCount) {
+                rank++;
             }
             participant.rank = rank;
-            prevPoints = participant.totalPoints;
+            prevPenalty = participant.finalPenalty;
+            prevSolvedCount = participant.solvedCount;
         });
 
         result.participants = combinedResults;

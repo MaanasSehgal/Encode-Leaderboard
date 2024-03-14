@@ -2,391 +2,136 @@
     "status": "OK",
     "result": {
         "contest": {
-            "id": 1918,
-            "name": "Codeforces Round 922 (Div. 2)",
-            "type": "CF",
+            "id": 1933,
+            "name": "Codeforces Round 929 (Div. 3)",
+            "type": "ICPC",
             "phase": "FINISHED",
             "frozen": false,
-            "durationSeconds": 7800,
-            "startTimeSeconds": 1706625300,
-            "relativeTimeSeconds": 3539445
+            "durationSeconds": 8100,
+            "startTimeSeconds": 1709044500,
+            "relativeTimeSeconds": 1379866
         },
         "problems": [
+            {"contestId": 1933, "index": "A", "name": "Turtle Puzzle: Rearrange and Negate", "type": "PROGRAMMING", "rating": 800, "tags": ["greedy", "math", "sortings"]},
+            {"contestId": 1933, "index": "B", "name": "Turtle Math: Fast Three Task", "type": "PROGRAMMING", "rating": 800, "tags": ["implementation", "math", "number theory"]},
             {
-                "contestId": 1918,
-                "index": "A",
-                "name": "Brick Wall",
-                "type": "PROGRAMMING",
-                "points": 500,
-                "rating": 800,
-                "tags": ["constructive algorithms", "greedy", "implementation", "math"]
-            },
-            {
-                "contestId": 1918,
-                "index": "B",
-                "name": "Minimize Inversions",
-                "type": "PROGRAMMING",
-                "points": 1000,
-                "rating": 900,
-                "tags": ["constructive algorithms", "data structures", "greedy", "implementation", "sortings"]
-            },
-            {
-                "contestId": 1918,
+                "contestId": 1933,
                 "index": "C",
-                "name": "XOR-distance",
+                "name": "Turtle Fingers: Count the Values of k",
                 "type": "PROGRAMMING",
-                "points": 1250,
-                "rating": 1400,
-                "tags": ["bitmasks", "greedy", "implementation", "math"]
+                "rating": 1100,
+                "tags": ["brute force", "implementation", "math", "number theory"]
             },
             {
-                "contestId": 1918,
+                "contestId": 1933,
                 "index": "D",
-                "name": "Blocking Elements",
+                "name": "Turtle Tenacity: Continual Mods",
                 "type": "PROGRAMMING",
-                "points": 2000,
-                "rating": 1900,
-                "tags": ["binary search", "data structures", "dp", "implementation", "two pointers"]
+                "rating": 1200,
+                "tags": ["constructive algorithms", "greedy", "math", "number theory", "sortings"]
             },
             {
-                "contestId": 1918,
+                "contestId": 1933,
                 "index": "E",
-                "name": "ace5 and Task Order",
+                "name": "Turtle vs. Rabbit Race: Optimal Trainings",
                 "type": "PROGRAMMING",
-                "points": 2500,
-                "rating": 2200,
-                "tags": ["constructive algorithms", "divide and conquer", "implementation", "interactive", "probabilities", "sortings"]
+                "rating": 1500,
+                "tags": ["binary search", "implementation", "math", "ternary search"]
             },
+            {"contestId": 1933, "index": "F", "name": "Turtle Mission: Robot and the Earthquake", "type": "PROGRAMMING", "rating": 2100, "tags": ["dfs and similar", "dp", "graphs", "shortest paths"]},
             {
-                "contestId": 1918,
-                "index": "F",
-                "name": "Caterpillar on a Tree",
-                "type": "PROGRAMMING",
-                "points": 3000,
-                "rating": 2500,
-                "tags": ["dfs and similar", "graphs", "greedy", "implementation", "sortings", "trees"]
-            },
-            {
-                "contestId": 1918,
+                "contestId": 1933,
                 "index": "G",
-                "name": "Permutation of Given",
+                "name": "Turtle Magic: Royal Turtle Shell Pattern",
                 "type": "PROGRAMMING",
-                "points": 3250,
-                "rating": 2700,
-                "tags": ["constructive algorithms", "math"]
+                "rating": 2300,
+                "tags": ["bitmasks", "brute force", "combinatorics", "constructive algorithms", "dfs and similar", "math"]
             }
         ],
         "rows": [
             {
-                "party": {
-                    "contestId": 1918,
-                    "members": [
-                        {
-                            "handle": "Maanas Sehgal"
-                        }
-                    ],
-                    "participantType": "CONTESTANT",
-                    "ghost": false,
-                    "room": 30,
-                    "startTimeSeconds": 1706625300
-                },
+                "party": {"contestId": 1933, "members": [{"handle": "maspy"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
                 "rank": 1,
-                "points": 10000,
-                "penalty": 0,
+                "points": 7.0,
+                "penalty": 95,
                 "successfulHackCount": 0,
                 "unsuccessfulHackCount": 0,
                 "problemResults": [
-                    {
-                        "points": 480,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 646
-                    },
-                    {
-                        "points": 956,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 663
-                    },
-                    {
-                        "points": 1165,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 1033
-                    },
-                    {
-                        "points": 1672,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 2501
-                    },
-                    {
-                        "points": 2130,
-                        "rejectedAttemptCount": 1,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 1964
-                    },
-                    {
-                        "points": 2134,
-                        "rejectedAttemptCount": 1,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 4107
-                    },
-                    {
-                        "points": 1926,
-                        "rejectedAttemptCount": 1,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 5918
-                    }
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 77},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 158},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 254},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 387},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 654},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 1575},
+                    {"points": 1.0, "rejectedAttemptCount": 1, "type": "FINAL", "bestSubmissionTimeSeconds": 2170}
                 ]
             },
             {
-                "party": {
-                    "contestId": 1918,
-                    "members": [
-                        {
-                            "handle": "JaredGoff"
-                        }
-                    ],
-                    "participantType": "CONTESTANT",
-                    "ghost": false,
-                    "room": 442,
-                    "startTimeSeconds": 1706625300
-                },
+                "party": {"contestId": 1933, "members": [{"handle": "jiangly"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
                 "rank": 2,
-                "points": 10375,
-                "penalty": 0,
+                "points": 7.0,
+                "penalty": 98,
                 "successfulHackCount": 0,
                 "unsuccessfulHackCount": 0,
                 "problemResults": [
-                    {
-                        "points": 472,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 852
-                    },
-                    {
-                        "points": 936,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 1005
-                    },
-                    {
-                        "points": 1140,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 1370
-                    },
-                    {
-                        "points": 1904,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 730
-                    },
-                    {
-                        "points": 2160,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 2071
-                    },
-                    {
-                        "points": 2060,
-                        "rejectedAttemptCount": 2,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 4222
-                    },
-                    {
-                        "points": 1703,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 7164
-                    }
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 130},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 237},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 365},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 519},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 1072},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 1647},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 2111}
                 ]
             },
             {
-                "party": {
-                    "contestId": 1918,
-                    "members": [
-                        {
-                            "handle": "ppltn"
-                        }
-                    ],
-                    "participantType": "CONTESTANT",
-                    "ghost": false,
-                    "room": 468,
-                    "startTimeSeconds": 1706625300
-                },
+                "party": {"contestId": 1933, "members": [{"handle": "Golovanov399"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
                 "rank": 3,
-                "points": 8639,
-                "penalty": 0,
+                "points": 7.0,
+                "penalty": 106,
                 "successfulHackCount": 0,
                 "unsuccessfulHackCount": 0,
                 "problemResults": [
-                    {
-                        "points": 496,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 161
-                    },
-                    {
-                        "points": 980,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 346
-                    },
-                    {
-                        "points": 1185,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 830
-                    },
-                    {
-                        "points": 1792,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 1590
-                    },
-                    {
-                        "points": 2110,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 2388
-                    },
-                    {
-                        "points": 2076,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 4673
-                    },
-                    {
-                        "points": 0,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL"
-                    }
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 57},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 212},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 363},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 515},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 928},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 2761},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 1711}
                 ]
             },
             {
-                "party": {
-                    "contestId": 1918,
-                    "members": [
-                        {
-                            "handle": "sunc_mgu_govno"
-                        }
-                    ],
-                    "participantType": "CONTESTANT",
-                    "ghost": false,
-                    "room": 565,
-                    "startTimeSeconds": 1706625300
-                },
+                "party": {"contestId": 1933, "members": [{"handle": "Farhod"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
                 "rank": 4,
-                "points": 8568,
-                "penalty": 0,
+                "points": 7.0,
+                "penalty": 110,
                 "successfulHackCount": 0,
                 "unsuccessfulHackCount": 0,
                 "problemResults": [
-                    {
-                        "points": 494,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 199
-                    },
-                    {
-                        "points": 980,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 336
-                    },
-                    {
-                        "points": 1160,
-                        "rejectedAttemptCount": 1,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 483
-                    },
-                    {
-                        "points": 1848,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 1140
-                    },
-                    {
-                        "points": 2070,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 2598
-                    },
-                    {
-                        "points": 2016,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 4939
-                    },
-                    {
-                        "points": 0,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL"
-                    }
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 90},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 219},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 312},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 615},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 876},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 1688},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 2970}
                 ]
             },
             {
-                "party": {
-                    "contestId": 1918,
-                    "members": [
-                        {
-                            "handle": "1926_yes"
-                        }
-                    ],
-                    "participantType": "CONTESTANT",
-                    "ghost": false,
-                    "room": 68,
-                    "startTimeSeconds": 1706625300
-                },
+                "party": {"contestId": 1933, "members": [{"handle": "Vercingetorix"}], "participantType": "VIRTUAL", "ghost": false, "startTimeSeconds": 1709808900},
                 "rank": 5,
-                "points": 8511,
-                "penalty": 0,
+                "points": 7.0,
+                "penalty": 111,
                 "successfulHackCount": 0,
                 "unsuccessfulHackCount": 0,
                 "problemResults": [
-                    {
-                        "points": 496,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 148
-                    },
-                    {
-                        "points": 984,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 245
-                    },
-                    {
-                        "points": 1185,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 836
-                    },
-                    {
-                        "points": 1760,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 1812
-                    },
-                    {
-                        "points": 2070,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 2638
-                    },
-                    {
-                        "points": 2016,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL",
-                        "bestSubmissionTimeSeconds": 4926
-                    },
-                    {
-                        "points": 0,
-                        "rejectedAttemptCount": 0,
-                        "type": "FINAL"
-                    }
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 43},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 127},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 301},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 452},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 975},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 2125},
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 2818}
                 ]
             }
         ]
