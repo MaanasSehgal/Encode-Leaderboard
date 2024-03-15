@@ -3,7 +3,7 @@ const contests = ["1932"];
 
 const fetchContestData = async (contestId) => {
     // const response = await fetch(`http://127.0.0.1:5500/public/${fileName}`);
-    const response = await fetch(`https://codeforces.com/api/contest.standings?contestId=${contestId}`);
+    const response = await fetch(`https://codeforces.com/api/contest.standings?contestId=${contestId}&count=50`);
 
     if (!response.ok) {
         throw new Error(`Failed to fetch data`);
