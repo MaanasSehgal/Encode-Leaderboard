@@ -1,20 +1,32 @@
 import React from "react";
+import Link from "next/link";
 
 const LeaderBoardHeading = () => {
-    return (
-        <>
-            <div className="font-bold w-full sm:h-1/4 leaderboard-bg-gradient-2 md:rounded-3xl flex flex-col">
-                <span className="text-center text-white text-4xl py-2">ENCODE 3.0 LEADERBOARD</span>
-                <div className="grid grid-cols-5 gap-5 text-center py-6 md:text-2xl sm:text-xl text-md">
-                    <p>RANK</p>
-                    <p>NAME</p>
-                    <p>ROUND 1</p>
-                    <p>ROUND 2</p>
-                    <p>TOTAL POINTS</p>
-                </div>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <link
+        href="https://fonts.cdnfonts.com/css/public-pixel"
+        rel="stylesheet"
+      ></link>
+      <div className="w-full flex flex-col gap-6">
+        <div className="text-center font-sans text-[#48DEFF] text-4xl py-2">
+          L
+          <a href="#" className="text-[#FF5456]">
+            E
+          </a>
+          ADERBOARD
+        </div>
+        <div className="font-sans text-xs sm:text-base md:text-lg bg-[#48DEFF] text-[#000000] flex items-center justify-center my-3 rounded-xl h-[2.75rem] sm:h-[3.5rem] w-full">
+          <div className="grid grid-cols-4 w-full text-center">
+            <div>RANK</div>
+            <div>NAME</div>
+            <div>PENALTY</div>
+            <div>QsSOLVED</div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default LeaderBoardHeading;

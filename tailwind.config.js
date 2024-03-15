@@ -6,6 +6,10 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Public Pixel"],
+      orbitron: ["Orbitron", "sans-serif"],
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -13,6 +17,11 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+ 
   },
-  plugins: ['tailwind-scrollbar-hide'],
+  plugins: ["tailwind-scrollbar-hide"],
 };
+
+//  fontFamily: {
+// 'orbitron': ['Orbitron', 'sans-serif'],
+// },
