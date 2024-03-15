@@ -1,7 +1,15 @@
 const fileNames = ["res1.json", "res2.json"];
 
 const fetchContestData = async (fileName) => {
-    const response = await fetch(`http://127.0.0.1:5500/public/${fileName}`);
+    const response = await fetch(`http://127.0.0.1:5500/Encode-Leaderboard/public/res1.json`);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch data for file ${fileName}`);
+    }
+    return response.json();
+};
+
+const fetchContestData2 = async (fileName) => {
+    const response = await fetch(`http://127.0.0.1:5500/Encode-Leaderboard/public/res2.json`);
     if (!response.ok) {
         throw new Error(`Failed to fetch data for file ${fileName}`);
     }
@@ -9,7 +17,7 @@ const fetchContestData = async (fileName) => {
 };
 
 const getCombinedResults = () => {
-    return Promise.all(fileNames.map(fetchContestData , fetchContestData2))
+    return Promise.all(fileNames.map(fetchContestData ))
         .then((results) => {
             let combinedUserMap = {};
             let contestNames = [];
