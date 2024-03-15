@@ -46,19 +46,21 @@ const getCombinedResults = () => {
 
             const combinedResults = Object.values(combinedUserMap);
             combinedResults.sort((a, b) => {
-                if (a.finalPenalty !== b.finalPenalty) {
-                    return a.finalPenalty - b.finalPenalty;
+                if (a.solvedCount !== b.solvedCount) {
+                    return b.solvedCount - a.solvedCount; // Sort by number of questions solved
                 } else {
-                    if (a.solvedCount !== b.solvedCount) {
-                        return b.solvedCount - a.solvedCount;
+                    if (a.finalPenalty !== b.finalPenalty) {
+                        return a.finalPenalty - b.finalPenalty; // If equal, sort by least penalty
                     } else {
-                        return a.username.localeCompare(b.username);
+                        return a.username.localeCompare(b.username); // If equal, sort by username
                     }
                 }
             });
 
-            combinedResults.forEach((participant, index) => {
-                participant.rank = index + 1;
+            let rank = 1;
+            combinedResults.forEach((participant) => {
+                participant.rank = rank;
+                rank++;
             });
 
             return combinedResults;

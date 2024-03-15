@@ -50,7 +50,7 @@
         ],
         "rows": [
             {
-                "party": {"contestId": 1933, "members": [{"handle": "maspy"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
+                "party": {"contestId": 1933, "members": [{"handle": "maspy2"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
                 "rank": 1,
                 "points": 7.0,
                 "penalty": 95,
@@ -67,7 +67,7 @@
                 ]
             },
             {
-                "party": {"contestId": 1933, "members": [{"handle": "jiangly"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
+                "party": {"contestId": 1933, "members": [{"handle": "jiangly2"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
                 "rank": 2,
                 "points": 7.0,
                 "penalty": 98,
