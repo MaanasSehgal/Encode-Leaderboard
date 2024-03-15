@@ -16,7 +16,7 @@ const fetchContestData = async (fileName) => {
 };
 
 const getCombinedResults = () => {
-    return Promise.all(fileNames.map(fetchContestData))
+    return Promise.all(fileNames.map(fetchContestData , fetchContestData2))
         .then((results) => {
             let combinedUserMap = {};
             let contestNames = [];

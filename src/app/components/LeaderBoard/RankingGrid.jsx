@@ -47,9 +47,9 @@ function RankingGrid() {
             className="border-2 border-[#48DEFF] rounded-lg mb-4 align-center text-center"
           >
             {/* <div className="grid  md:text-left lg:text-center grid-cols-4 gap-10 sm:gap-14 md:gap-16 xl:gap-4 p-1 mx-3 text-xs md:text-lg  text-wrap"> */}
-            <div className="grid   grid-cols-4 p-1  text-xs md:text-lg mx-auto text-wrap">
+            <div className="grid   grid-cols-4 p-1  text-xs sm:text-base md:text-lg mx-auto text-wrap">
               <div>{contestant.rank}</div>
-              <div>{contestant.username}</div>
+              <div className="truncate">{contestant.username}</div>
               <div>{contestant.finalPenalty}</div>
               <div>{contestant.questionCount1 + contestant.questionCount2}</div>
             </div>
