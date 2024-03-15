@@ -50,13 +50,14 @@
         ],
         "rows": [
             {
-                "party": {"contestId": 1933, "members": [{"handle": "maspgy"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
+                "party": {"contestId": 1933, "members": [{"handle": "maspy2"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
                 "rank": 1,
                 "points": 7.0,
                 "penalty": 95,
                 "successfulHackCount": 0,
                 "unsuccessfulHackCount": 0,
                 "problemResults": [
+                    {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 77},
                     {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 158},
                     {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 254},
                     {"points": 1.0, "rejectedAttemptCount": 0, "type": "FINAL", "bestSubmissionTimeSeconds": 387},
@@ -66,7 +67,7 @@
                 ]
             },
             {
-                "party": {"contestId": 1933, "members": [{"handle": "jiangly"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
+                "party": {"contestId": 1933, "members": [{"handle": "jiangly2"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
                 "rank": 2,
                 "points": 7.0,
                 "penalty": 98,
@@ -83,7 +84,7 @@
                 ]
             },
             {
-                "party": {"contestId": 1933, "members": [{"handle": "Golovanov399"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
+                "party": {"contestId": 1933, "members": [{"handle": "Golovanov3992"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
                 "rank": 3,
                 "points": 7.0,
                 "penalty": 106,
@@ -100,7 +101,7 @@
                 ]
             },
             {
-                "party": {"contestId": 1933, "members": [{"handle": "Farhod"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
+                "party": {"contestId": 1933, "members": [{"handle": "Farhod2"}], "participantType": "OUT_OF_COMPETITION", "ghost": false, "startTimeSeconds": 1709044500},
                 "rank": 4,
                 "points": 7.0,
                 "penalty": 110,
@@ -117,7 +118,7 @@
                 ]
             },
             {
-                "party": {"contestId": 1933, "members": [{"handle": "Vercingetorix"}], "participantType": "VIRTUAL", "ghost": false, "startTimeSeconds": 1709808900},
+                "party": {"contestId": 1933, "members": [{"handle": "Vercingetorix2"}], "participantType": "VIRTUAL", "ghost": false, "startTimeSeconds": 1709808900},
                 "rank": 5,
                 "points": 7.0,
                 "penalty": 111,

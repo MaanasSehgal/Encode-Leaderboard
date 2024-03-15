@@ -1,14 +1,7 @@
 const fileNames = ["res1.json", "res2.json"];
 
-const fetchContestData2 = async (fileName) => {
-    const response = await fetch(`http://127.0.0.1:5500/Encode-Leaderboard/public/res2.json`);
-    if (!response.ok) {
-        throw new Error(`Failed to fetch data for file ${fileName}`);
-    }
-    return response.json();
-};
 const fetchContestData = async (fileName) => {
-    const response = await fetch(`http://127.0.0.1:5500/Encode-Leaderboard/public/res1.json`);
+    const response = await fetch(`http://127.0.0.1:5500/public/${fileName}`);
     if (!response.ok) {
         throw new Error(`Failed to fetch data for file ${fileName}`);
     }
@@ -64,16 +57,8 @@ const getCombinedResults = () => {
                 }
             });
 
-            let rank = 0;
-            let prevPenalty = -1;
-            let prevSolvedCount = -1;
-            combinedResults.forEach((participant) => {
-                if (participant.finalPenalty !== prevPenalty || participant.solvedCount !== prevSolvedCount) {
-                    rank++;
-                }
-                participant.rank = rank;
-                prevPenalty = participant.finalPenalty;
-                prevSolvedCount = participant.solvedCount;
+            combinedResults.forEach((participant, index) => {
+                participant.rank = index + 1;
             });
 
             return combinedResults;
