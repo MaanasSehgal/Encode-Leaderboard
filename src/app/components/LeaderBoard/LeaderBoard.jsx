@@ -8,7 +8,7 @@ const LeaderBoard = () => {
       <div className="fixed top-0 text-white text-wrap w-5/6">
         <div className="flex flex-col items-center w-full h-full md:rounded-3xl ">
           <LeaderBoardHeading />
-          <div className="h-[50vh] w-full overflow-y-auto scrollbar-hide">
+          <div className="h-[50vh] w-full overflow-y-scroll scrollbar-hide">
             <RankingGrid />
           </div>
         </div>
