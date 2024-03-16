@@ -1,15 +1,11 @@
+
 // const fileNames = ["res1.json", "res2.json"];
 const contests = ["1932"];
 
-<<<<<<< HEAD
-const fetchContestData = async (fileName) => {
-    const response = await fetch(`http://127.0.0.1:5500/public/${fileName}`);
-=======
 const fetchContestData = async (contestId) => {
     // const response = await fetch(`http://127.0.0.1:5500/public/${fileName}`);
     const response = await fetch(`https://codeforces.com/api/contest.standings?contestId=${contestId}&count=50`);
 
->>>>>>> upstream/main
     if (!response.ok) {
         throw new Error(`Failed to fetch data`);
     }
@@ -17,12 +13,8 @@ const fetchContestData = async (contestId) => {
 };
 
 const getCombinedResults = () => {
-<<<<<<< HEAD
-    return Promise.all(fileNames.map(fetchContestData , fetchContestData2))
-=======
     // return Promise.all(fileNames.map(fetchContestData))
     return Promise.all(contests.map(fetchContestData))
->>>>>>> upstream/main
         .then((results) => {
             let combinedUserMap = {};
             let contestNames = [];
